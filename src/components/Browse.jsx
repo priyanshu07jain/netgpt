@@ -1,6 +1,16 @@
+
+import useNowPlayingMovie from "../hooks/useNowPlayingMovie"
+import Header from "./Header"
+import MainContainer from "./MainContainer";
+
 const Browse = () => {
+//for fetching data
+useNowPlayingMovie();
   return (
-    <div>Browse</div>
+    <div>
+      <Header/>
+      <MainContainer/>
+    </div>
   )
 }
 
